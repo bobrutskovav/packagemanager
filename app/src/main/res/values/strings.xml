@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Package Manager</string>
+    <string name="cant_start">Пакет %1$s не умеет в запуск</string>
+</resources>

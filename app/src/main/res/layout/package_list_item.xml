@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:layout_margin="@dimen/image_margin_off_img"
+        android:id="@+id/proc_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/proc_title_text_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/proc_image"
+        android:paddingStart="@dimen/padding_left_text"
+        android:layout_marginTop="@dimen/image_margin_off_img"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        tools:text="Title Text"
+        android:paddingLeft="3dp" />
+    <TextView
+        android:id ="@+id/proc_details_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_text_margin_top"
+        android:layout_toRightOf="@id/proc_image"
+        android:layout_below="@id/proc_title_text_textview"
+        android:textAppearance="@android:style/TextAppearance.Holo.Small"
+        android:paddingLeft="@dimen/padding_left_text"
+        tools:text="Details Text" />
+
+</RelativeLayout>
